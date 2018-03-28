@@ -1,0 +1,16 @@
+{
+"manifest_version": 2,
+"name": "Custom Google Homepage",
+"description": "This extension changes background and a bit of the font of your Google homepage",
+"version": "1.0",
+"content_scripts": [
+  {
+    "matches": ["https://www.google.lt/*"],
+    "css": ["main.css"]
+  }
+],
+"page_action": {
+  "default_icon": "icon.png",
+  "default_title": "Custom google page!"
+}
+}
